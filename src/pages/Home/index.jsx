@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Row, Col, Container, FormGroup, InputGroup, Form, Table } from "react-bootstrap";
+import { Row, Col, Container, InputGroup, Form, Table } from "react-bootstrap";
 import Item from "./Item";
 import AudioPlayer from 'react-h5-audio-player';
 import 'react-h5-audio-player/lib/styles.css';
@@ -9,7 +9,6 @@ import 'react-h5-audio-player/lib/styles.css';
 const Home = () => {
     const [data, setData] =  useState(null);
     const [selectedItem, setSelectedItem] = useState();
-    const [searchText, setSearchText] = useState('');
     const [searchResult, setSearchResult] = useState([]);
 
     const fetchData = async () => {

@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route, Link, Routes } from 'react-router-dom' 
+import { BrowserRouter, Route, Routes } from 'react-router-dom' 
 import Home from './pages/Home';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -8,8 +8,7 @@ const App = () => {
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path='/home' element={<Home />}/>
-
+          <Route path='/' element={<Home />}/>
         </Routes>
       </BrowserRouter>
     </div>

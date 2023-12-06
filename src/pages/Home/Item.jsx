@@ -2,7 +2,6 @@ import React from 'react'
 import { Card, Col } from 'react-bootstrap'
 
 const Item = ({data, select}) => {
-    const base_url = 'https://arthurfrost.qflo.co.za'
     return (
         <Col sm={4} className='mb-4'>
             <Card>
